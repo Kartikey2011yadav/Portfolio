@@ -438,7 +438,7 @@ body.sidebar-active>#ncf-overlay {
     background-color: #ffe7eb;
 }
 
-.navbar-nav li.live-chat>a {
+.navbar-nav li.live-chat>a { 
     color: #03a900;
 }
 
