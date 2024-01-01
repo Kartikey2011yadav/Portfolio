@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets`/css/templatemo-liberty-market.css" />
     <link rel="stylesheet" href="assets`/css/owl.css" />
     <link rel="stylesheet" href="assets`/css/animate.css" />
+    <link rel="stylesheet" href="assets`/css/main.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -53,6 +54,7 @@
                 <img src="assets`/images/logo.png" alt="" />
               </a>
               <!-- ***** Logo End ***** -->
+
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -73,7 +75,17 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner">
+    <div
+      class="main-banner sa-banner banner-content bg-slider"
+    >
+      <div id="sa-particles">
+        <canvas
+          class="particles-js-canvas-el"
+          width="1851"
+          height="992"
+          style="width: 100%; height: 100%"
+        ></canvas>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 align-self-center">
@@ -630,5 +642,145 @@
     <script src="assets`/js/tabs.js"></script>
     <script src="assets`/js/popup.js"></script>
     <script src="assets`/js/custom.js"></script>
+    <!-- JS -->
+    <script src="assets`/temp/jquery.min.js.download"></script>
+    <script src="assets`/temp/popper.min.js.download"></script>
+    <script src="assets`/temp/bootstrap.min.js.download"></script>
+    <script src="assets`/temp/slick.min.js.download"></script>
+    <script src="assets`/temp/inview.min.js.download"></script>
+    <script src="assets`/temp/isotope.pkgd.min.js.download"></script>
+    <script src="assets`/temp/counterup.min.js.download"></script>
+    <script src="assets`/temp/waypoints.min.js.download"></script>
+    <script src="assets`/temp/jquery.nav.js.download"></script>
+    <script src="assets`/temp/particles.min.js.download"></script>
+    <script src="assets`/temp/YTPlayer.min.js.download"></script>
+    <script src="assets`/temp/jquery.ripples-min.js.download"></script>
+    <script src="assets`/temp/jquery.backstretch.min.js.download"></script>
+    <script src="assets`/temp/validate.js.download"></script>
+    <script src="assets`/temp/main.js.download"></script>
+    <script>
+      (function () {
+        particlesJS(
+          "sa-particles",
+
+          {
+            particles: {
+              number: {
+                value: 150,
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+              },
+              color: {
+                value: "#ffffff",
+              },
+              shape: {
+                type: "circle",
+                stroke: {
+                  width: 0,
+                  color: "#000000",
+                },
+                polygon: {
+                  nb_sides: 5,
+                },
+                image: {
+                  src: "img/github.svg",
+                  width: 100,
+                  height: 100,
+                },
+              },
+              opacity: {
+                value: 0.5,
+                random: false,
+                anim: {
+                  enable: false,
+                  speed: 1,
+                  opacity_min: 0.1,
+                  sync: false,
+                },
+              },
+              size: {
+                value: 5,
+                random: true,
+                anim: {
+                  enable: false,
+                  speed: 40,
+                  size_min: 0.1,
+                  sync: false,
+                },
+              },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1,
+              },
+              move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                attract: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 1200,
+                },
+              },
+            },
+            interactivity: {
+              detect_on: "canvas",
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                onclick: {
+                  enable: true,
+                  mode: "push",
+                },
+                resize: true,
+              },
+              modes: {
+                grab: {
+                  distance: 400,
+                  line_linked: {
+                    opacity: 1,
+                  },
+                },
+                bubble: {
+                  distance: 400,
+                  size: 40,
+                  duration: 2,
+                  opacity: 8,
+                  speed: 3,
+                },
+                repulse: {
+                  distance: 200,
+                },
+                push: {
+                  particles_nb: 4,
+                },
+                remove: {
+                  particles_nb: 2,
+                },
+              },
+            },
+            retina_detect: true,
+            config_demo: {
+              hide_card: false,
+              background_color: "#b61924",
+              background_image: "",
+              background_position: "50% 50%",
+              background_repeat: "no-repeat",
+              background_size: "cover",
+            },
+          }
+        );
+      })();
+    </script>
   </body>
 </html>

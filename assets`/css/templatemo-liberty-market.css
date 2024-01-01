@@ -637,7 +637,7 @@ Header Style
     box-shadow: none;
     text-align: center;
   }
-  .header-area .container {
+  .header-area{
     padding: 0px;
   }
   .header-area .logo {
