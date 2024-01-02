@@ -805,6 +805,11 @@ Banner Style
   opacity: 1;
 }
 
+.main-banner .container .align-self-center .header-text{
+  opacity: 0.8;
+
+}
+
 
 /* 
 ---------------------------------------------
