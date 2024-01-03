@@ -681,13 +681,13 @@
               },
             },
             color: {
-              value: "#ffffff",
+              value: "random",
             },
             shape: {
               type: "circle",
               stroke: {
                 width: 0,
-                color: "#000000",
+                color: "random",
               },
               polygon: {
                 nb_sides: 5,
@@ -699,7 +699,7 @@
               },
             },
             opacity: {
-              value: 0.5,
+              value: 0.9,
               random: false,
               anim: {
                 enable: false,
@@ -712,9 +712,9 @@
               value: 5,
               random: true,
               anim: {
-                enable: false,
-                speed: 40,
-                size_min: 0.1,
+                enable: true,
+                speed: 8,
+                size_min: 0.5,
                 sync: false,
               },
             },
@@ -727,7 +727,7 @@
             },
             move: {
               enable: true,
-              speed: 6,
+              speed: 4,
               direction: "none",
               random: true,
               straight: false,
@@ -744,7 +744,7 @@
             events: {
               onhover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
               },
               onclick: {
                 enable: true,
@@ -754,7 +754,7 @@
             },
             modes: {
               grab: {
-                distance: 400,
+                distance: 100,
                 line_linked: {
                   opacity: 1,
                 },
