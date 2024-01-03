@@ -76,6 +76,7 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
+
 html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -84,6 +85,13 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body .page-content {
+  background-color: #27292a;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
 }
 
 a {
@@ -823,8 +831,11 @@ Categories & Collections Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px 150px 0px;
+  padding: 90px 0px 100px 0px;
   position: relative;
+  border-top-right-radius: 27px;
+  border-top-left-radius: 27px;
+  
 }
 
 .categories-collections:after {
