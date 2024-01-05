@@ -88,10 +88,15 @@ html, body {
 }
 
 body .page-content {
-  background-color: #27292a;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 20px;
+  background-color: #333a3c;
+}
+
+body .page-content .widget{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  background-color: transparent;
 }
 
 a {
@@ -348,7 +353,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #404245 !important;
+  background-color: #2d2e33 !important;
   height: 70px!important;
   position: fixed!important;
   top: 0!important;
@@ -365,7 +370,7 @@ Header Style
   background-color: transparent;
   position: absolute;
   height: 70px;
-  top: 30px;
+  top: 10px;
   left: 0;
   right: 0;
   z-index: 100;
@@ -381,7 +386,6 @@ Header Style
   display: flex;
   background-color: transparent;
   padding: 15px 30px;
-  border-radius: 50px;
 }
 
 .background-header .main-nav {
@@ -395,10 +399,12 @@ Header Style
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  
 }
 
 .header-area .main-nav .logo img {
   width: 223px;
+  vertical-align: middle;
 }
 
 .background-header .main-nav .logo {
@@ -415,7 +421,6 @@ Header Style
   justify-content: flex-end;
   vertical-align: middle;
   text-align: right;
-  margin-top: 15px;
   margin-right: 0px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -462,6 +467,9 @@ Header Style
 .background-header .main-nav .nav li a.active {
   color: #fff;
   opacity: 1;
+}
+.background-header .main-nav .nav li {
+  padding-top: 20px;
 }
 
 .header-area .main-nav .nav li.has-sub {
@@ -833,9 +841,7 @@ Categories & Collections Style
   background-size: cover;
   padding: 90px 0px 100px 0px;
   position: relative;
-  border-top-right-radius: 27px;
-  border-top-left-radius: 27px;
-  
+  border-radius: 27px;
 }
 
 .categories-collections:after {
@@ -1009,11 +1015,11 @@ Create NFT Style
 */
 
 .create-nft {
-  background-image: url(../images/main-bg.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat; */
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px;
+  padding: 50px 0px;
   position: relative;
 }
 
@@ -1109,8 +1115,9 @@ Currently Market Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px;
+  padding: 50px 0px;
   position: relative;
+  border-radius: 27px;
 }
 
 .currently-market-item {
