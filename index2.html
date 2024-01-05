@@ -389,9 +389,11 @@
                     <li data-filter=".dig">Digital Art</li>
                     <li data-filter=".blc">Blockchain</li>
                     <li data-filter=".vtr">Virtual</li>
+                    <li data-filter=".vtr">Virtual</li>
                   </ul>
                 </div>
               </div>
+              
               <div class="col-lg-12">
                 <div class="row grid">
                   <div class="col-lg-6 currently-market-item all msc">
@@ -724,7 +726,7 @@
               anim: {
                 enable: false,
                 speed: 1,
-                opacity_min: 0.1,
+                opacity_min: 0.6,
                 sync: false,
               },
             },
@@ -734,7 +736,7 @@
               anim: {
                 enable: true,
                 speed: 8,
-                size_min: 0.5,
+                size_min: 3,
                 sync: false,
               },
             },
@@ -764,7 +766,7 @@
             events: {
               onhover: {
                 enable: true,
-                mode: "grab",
+                mode: "repulse",
               },
               onclick: {
                 enable: true,
@@ -787,7 +789,7 @@
                 speed: 3,
               },
               repulse: {
-                distance: 100,
+                distance: 80,
               },
               push: {
                 particles_nb: 4,
