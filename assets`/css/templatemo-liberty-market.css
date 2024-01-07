@@ -369,8 +369,8 @@ Header Style
 .header-area {
   background-color: transparent;
   position: absolute;
-  height: 70px;
-  top: 10px;
+  height: 100px;
+  top: 20px;
   left: 0;
   right: 0;
   z-index: 100;
@@ -385,7 +385,8 @@ Header Style
   background: transparent;
   display: flex;
   background-color: transparent;
-  padding: 15px 30px;
+  /* padding: 40px; */
+
 }
 
 .background-header .main-nav {
@@ -434,6 +435,7 @@ Header Style
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
+  padding-top: 15px;
 }
 
 .header-area .main-nav .nav li a {
@@ -450,6 +452,18 @@ Header Style
   padding: 8px 15px;
   border-radius: 18px;
   letter-spacing: 1px;
+}
+
+.header-area .main-nav .nav li:last-child a {
+  background-color: #27292a;
+  padding: 8px 15px 8px 15px;
+  border-radius: 23px;
+}
+
+.header-area .main-nav .nav li:last-child a img {
+  max-width: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
 }
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu li:last-child a:hover,
