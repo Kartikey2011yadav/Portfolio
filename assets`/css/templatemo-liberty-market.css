@@ -381,7 +381,7 @@ Header Style
 }
 
 .header-area .main-nav {
-  min-height: 80px;
+  min-height: 70px;
   background: transparent;
   display: flex;
   background-color: transparent;
@@ -431,11 +431,15 @@ Header Style
   z-index: 999;
 }
 
+.background-header .main-nav .nav{
+  padding-top: 0px;
+}
+
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 .header-area .main-nav .nav li a {
@@ -456,7 +460,7 @@ Header Style
 
 .header-area .main-nav .nav li:last-child a {
   background-color: #27292a;
-  padding: 8px 15px 8px 15px;
+  padding: 6px 15px 6px 15px;
   border-radius: 23px;
 }
 
