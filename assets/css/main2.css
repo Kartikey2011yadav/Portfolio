@@ -1,8 +1,8 @@
 /*
 
-TemplateMo 579 Cyborg Gaming
+TemplateMo 577 Liberty Market
 
-https://templatemo.com/tm-579-cyborg-gaming
+https://templatemo.com/tm-577-liberty-market
 
 */
 
@@ -25,7 +25,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
 /* 
 ---------------------------------------------
 reset
@@ -76,8 +76,9 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
+
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #1e1e1e;
   font-size: 16px;
@@ -86,12 +87,21 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-	color: #CCC;
-  text-decoration: none !important;
+body .page-content {
+  /* background-color: #060029; */
+  background-image: linear-gradient(135deg, #060029 10%, #091e7a 100%);
 }
-a:hover {
-	color: #F99;
+
+body .page-content .widget{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,109 +133,117 @@ Global Styles
 */
 html,
 body {
-  background: #1f2122;
-  font-family: 'Poppins', sans-serif;
-}
-
-body .page-content {
-  margin-top: 110px;
-  background-color: #27292a;
-  padding: 60px;
-  border-radius: 23px;
-}
-
-p {
-  font-size: 15px;
-  color: #666;
-  line-height: 30px;
-  margin-bottom: 0px;
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
 }
 
 ::selection {
-  background: #e75e8d;
+  background: #7453fc;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #e75e8d;
+  background: #7453fc;
   color: #fff;
 }
 
-.templatemo-item {
-	max-width: 80px; 
-	border-radius: 23px;
+.border-button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #7453fc;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.border-button a:after {
+  width: 78%;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.border-button a:hover {
+  background-color: #7453fc;
+  color: #fff;
 }
 
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #e75e8d;
+  background-color: #7453fc;
+  border: 1px solid #7453fc;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: all .3s;
   position: relative;
   overflow: hidden;
+}
+
+.main-button a:after {
+  width: 78%;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }
 
 .main-button a:hover {
   background-color: #fff;
-  color: #e75e8d;
-}
-
-.main-border-button a {
-  font-size: 14px;
-  color: #ec6090;
-  background-color: transparent;
-  border: 1px solid #ec6090;
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-}
-
-.main-border-button a:hover {
-  border-color: #fff;
-  background-color: #fff;
-  color: #e75e8d;
-}
-
-.border-no-active a {
-  border-color: #666;
-  color: #666;
-}
-
-.border-no-active a:hover{
-  border-color: #666;
-  color: #666;
-  background-color: transparent;
+  color: #7453fc;
+  border: 1px solid #fff;
 }
 
 section {
   margin-top: 120px;
 }
 
-.heading-section h4 {
-  color: #ec6090;
-  font-size: 34px;
-  text-decoration: none;
-  margin-bottom: 30px;
+.section-heading {
+  position: relative;
+  z-index: 2;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  text-align: center;
 }
 
-.heading-section h4 em {
+.section-heading .line-dec {
+  width: 100px;
+  height: 2px;
+  background-color: #7453fc;
+  margin: 0 auto 30px auto;
+}
+
+.section-heading h2 {
+  margin-top: 10px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
   color: #fff;
-  font-style: normal;
-  text-decoration: underline;
 }
 
+.section-heading h2 em {
+  color: #7453fc;
+  font-style: normal;
+}
 
 /* 
 ---------------------------------------------
@@ -739,7 +757,6 @@ Header Style
   }
 }
 
-
 /* 
 ---------------------------------------------
 Banner Style
@@ -747,166 +764,505 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
-  background-position: center center;
-  background-size: cover;
-  min-height: 380px;
-  border-radius: 23px;
-  padding: 80px 60px;
+  padding-top: 260px;
+  padding-bottom: 200px;
+  background-color: #000000;
+
 }
 
 .main-banner h6 {
   font-size: 20px;
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
 }
 
-.main-banner h4 {
-  font-size: 45px;
+.main-banner h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  opacity: 0.9;
 }
 
-.main-banner h4 em {
-  font-style: normal;
-  color: #ec6090;
-}
-
-/* 
----------------------------------------------
-Most Popular Style
---------------------------------------------- 
-*/
-
-.most-popular {
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #1f2122;
-  border-radius: 23px;
-}
-
-.most-popular .item {
-  background-color: #27292a;
-  padding: 30px 15px;
-  border-radius: 23px;
-  margin-bottom: 30px;
-}
-
-.most-popular .item .item {
-  padding: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  margin-bottom: 0px;
-}
-
-.most-popular .item img {
-  border-radius: 23px;
-}
-
-.most-popular .item h4 {
-  font-size: 15px;
+.main-banner p {
   margin-top: 20px;
-  margin-bottom: 0px;
-  display: inline-block;
+  opacity: 0.9;
 }
 
-.most-popular .item span {
-  color: #666;
-  display: block;
-  margin-top: 7px;
-  font-weight: 400;
+.main-banner .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
 }
 
-.most-popular .item ul {
-  float: right;
-  margin-top: 20px;
+.main-banner .border-button {
+  margin-right: 15px;
 }
 
-.most-popular .item ul li {
-  text-align: right;
-  color: #fff;
-  font-size: 14px;
+.main-banner .owl-banner {
+  margin-top: -40px;
 }
 
-.most-popular .item ul li:first-child i {
-  color: yellow;
-}
-
-.most-popular .item ul li:last-child i {
-  color: #ec6090;
-}
-
-.most-popular .main-button {
+.main-banner .owl-nav {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: -76px;
   text-align: center;
-  margin-bottom: -53px;
 }
+
+.main-banner .owl-nav .owl-prev {
+  margin-right: 7.5px;
+}
+
+.main-banner .owl-nav .owl-next {
+  margin-left: 7.5px;
+}
+
+.main-banner .owl-nav .owl-prev span,
+.main-banner .owl-nav .owl-next span  {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+  color: #7453fc;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.main-banner .owl-nav .owl-prev span:hover,
+.main-banner .owl-nav .owl-next span:hover {
+  opacity: 1;
+}
+
+/* .main-banner .container .align-self-center .header-text{
+  opacity: 0.8;
+  display: inline-block;
+} */
+
 
 /* 
 ---------------------------------------------
-Gaming Library Style
+Categories & Collections Style
 --------------------------------------------- 
 */
 
-.gaming-library {
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #1f2122;
-  border-radius: 23px;
+.categories-collections {
+  background-image: url(../images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 90px 0px 100px 0px;
+  position: relative;
+  border-radius: 27px;
 }
 
-.gaming-library .item {
-  border-bottom: 1px solid #27292a;
+.categories-collections:after {
+  background-image: url(/assets/images/category-collection-dec.png);
+  width: 300px;
+  height: 282px;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  content: '';
+}
+
+.categories .item {
+  background-color: #282b2f;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #404245;
+  position: relative;
+}
+
+.categories .item .icon {
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  text-align: center;
+  line-height: 62px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.categories .item .icon img {
+  max-width: 31px;
+}
+
+.categories .item h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.categories .item .icon-button a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  background-color: #fff;
+  color: #7453fc;
+  border-radius: 50%;
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  bottom: -23px;
+  transform: translateX(-23px);
+  transition: all .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.categories .item .icon-button a:hover {
+  background-color: #7453fc;
+  color: #fff;
+}
+
+.categories .item:hover .icon-button a {
+  visibility: visible;
+  opacity: 1;
+}
+
+.collections {
+  margin-top: 140px;
+}
+
+.collections .item img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.collections .item .down-content {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px;
+}
+
+.collections .item .down-content h4 {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-.gaming-library .last-item {
-  margin-bottom: 30px;
+.collections .item {
+  padding-bottom: 60px;
 }
 
-.profile-library .last-item {
-  border-bottom: none;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.gaming-library .item ul li {
-  margin-top: 15px;
-}
-
-.gaming-library .item ul li img {
-  margin-top: -30px;
-}
-
-.gaming-library .item ul li {
+.collections .item span {
+  color: #fff;
   display: inline-block;
-  width: 17%;
+  width: 48%;
+  font-size: 15px;
 }
 
-.gaming-library .item ul li:first-child {
-  width: 110px;
+.collections .item span strong {
+  font-size: 20px;
 }
 
-.gaming-library .item ul li:last-child {
-  width: 15%;
+.collections .item span.category {
   text-align: right;
 }
 
-.gaming-library .item ul li h4 {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.gaming-library .item ul li span {
-  color: #666;
-  font-size: 14px;
-}
-
-.gaming-library .main-button {
+.collections .item .main-button a {
+  width: 100%;
   text-align: center;
-  margin-bottom: -53px;
 }
+
+.collections .item .main-button {
+  margin-top: 20px;
+  margin-bottom: -60px;
+}
+
+.collections .item .main-button a:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #7453fc;
+}
+
+.collections .owl-nav {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50px);
+  text-align: center;
+}
+
+.collections .owl-nav .owl-prev {
+  position: absolute;
+  left: -23px;
+}
+
+.collections .owl-nav .owl-next {
+  position: absolute;
+  right: -23px;
+}
+
+.collections .owl-nav .owl-prev span,
+.collections .owl-nav .owl-next span  {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+  color: #7453fc;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.collections .owl-nav .owl-prev span:hover,
+.collections .owl-nav .owl-next span:hover {
+  opacity: 1;
+}
+
+
+/* 
+---------------------------------------------
+Create NFT Style
+--------------------------------------------- 
+*/
+
+.create-nft {
+  /* background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat; */
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  position: relative;
+}
+
+.create-nft .section-heading .line-dec {
+  margin-left: 0%;
+  background-color: #fff;
+}
+
+.create-nft .section-heading {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.create-nft .main-button {
+  text-align: right;
+}
+
+.create-nft .item {
+  margin-top: 30px;
+  position: relative;
+}
+
+.create-nft .first-item .number {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+.create-nft .first-item:after {
+  position: absolute;
+  width: 1px;
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: '';
+  right: 5px;
+  top: 5%;
+}
+
+.create-nft .second-item .number {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+.create-nft .second-item:after {
+  position: absolute;
+  width: 1px;
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.2);
+  content: '';
+  right: 5px;
+  top: 5%;
+}
+
+.item .icon {
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  text-align: center;
+  line-height: 62px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.create-nft .item .icon img {
+  max-width: 31px;
+}
+
+.create-nft h4 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.create-nft p {
+  margin-right: 30px;
+}
+
+.create-nft .item a {
+  color: #3CF;
+}
+
+
+
+/* 
+---------------------------------------------
+Currently Market Style
+--------------------------------------------- 
+*/
+
+.currently-market {
+  background-image: url(../images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  position: relative;
+  border-radius: 27px;
+}
+
+.currently-market-item {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.currently-market .section-heading {
+  text-align: left;
+}
+
+.currently-market .section-heading .line-dec {
+  margin-left: 0;
+}
+
+.currently-market .filters {
+  text-align: right;
+}
+
+.currently-market .filters ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.currently-market .filters ul li:first-child {
+  margin-left: 0px;
+}
+
+
+.currently-market .filters ul li.active,
+.currently-market .filters ul li:hover {
+  background-color: #7453fc;
+}
+
+.currently-market .item {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.currently-market .item .right-content {
+  margin-left: 30px;
+  width: 100%;
+}
+
+.currently-market .item .right-content h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.currently-market .item .right-content span.author {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.currently-market .item .right-content span.author img {
+  margin-right: 15px;
+}
+
+.currently-market .item .right-content span.author h6 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.currently-market .item .right-content span.author a {
+  color: #7453fc;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.currently-market .item span {
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.currently-market .item .line-dec {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.currently-market .item span strong {
+  font-size: 20px;
+}
+
+.currently-market .item span.bid {
+  line-height: 35px;
+}
+
+.currently-market .item span.bid em,
+.currently-market .item span.ends em {
+  font-style: normal;
+}
+
+.currently-market .item span.ends {
+  text-align: right;
+  float: right;
+  line-height: 35px;
+}
+
+.currently-market .item .text-button {
+  margin-top: 40px;
+}
+
+.currently-market .item .text-button a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #7453fc;
+  border-bottom: 1px solid #7453fc;
+}
+
+
 
 /* 
 ---------------------------------------------
@@ -914,696 +1270,815 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer p {
+footer {
+  background: rgb(14, 9, 34);
   text-align: center;
-  padding: 30px 0px;
+  padding: 25px 0px;
+}
+
+footer p {
   color: #fff;
-  font-weight: 300;
 }
 
 footer p a {
   color: #fff;
+  font-weight: 500;
   transition: all .3s;
 }
 
 footer p a:hover {
-  color: #ec6090;
+  color: #fff;
+  opacity: 0.75;
 }
+
 
 /* 
 ---------------------------------------------
-Featured Games Style
+Page Heading Style
 --------------------------------------------- 
 */
 
-.featured-games {
-  border-radius: 23px;
-  background-color: #1f2122;
-  padding: 30px;
+.normal-space {
+  padding: 250px 0px 120px 0px !important;
 }
 
-.featured-games .item .thumb {
+.page-heading {
+  background-image: url(../images/heading-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 250px;
+  text-align: center;
+  background-color: #2a2a2a;
+}
+
+.page-heading h6 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.page-heading h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+
+.page-heading span {
+  color: #8a75da;
+  font-size: 15px;
+}
+
+.page-heading span a {
+  color: #fff;
+}
+
+.page-heading .buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-heading .buttons .main-button {
+  margin-right: 15px;
+}
+
+.page-heading .buttons .border-button {
+  margin-left: 15px;
+}
+
+
+
+/* 
+---------------------------------------------
+Explore Style
+--------------------------------------------- 
+*/
+
+.featured-explore {
+  margin-top: 60px;
+  margin-bottom: -300px;
+}
+
+.featured-explore .owl-features {
+  min-height: 100%;
+}
+
+.featured-explore .item .thumb {
   position: relative;
   overflow: hidden;
 }
 
-.featured-games .item .thumb .hover-effect {
+.featured-explore .item .thumb:hover .hover-effect {
+  visibility: visible;
+  opacity: 1;
+  right: 30px;
+}
+
+.featured-explore .item .thumb .hover-effect {
   position: absolute;
-  bottom: -100px;
-  text-align: center;
-  width: 100%;
+  right: -100%;
+  bottom: 30px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(64, 66, 69, 0.9);
+  background-color: rgba(40, 43, 47, 0.9);
   opacity: 0;
   visibility: hidden;
-  transition: all .4s;
+  transition: all .5s;
 }
 
-.featured-games .item .thumb:hover .hover-effect {
-  opacity: 1;
-  visibility: visible;
-  bottom: 15px;
+.featured-explore .item .hover-effect .content h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
-.featured-games .item .thumb .hover-effect h6 {
-  background-color: rgba(31,33,34,0.95);
-  display: inline-block;
-  color: #ec6090;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 20px;
-  border-radius: 25px;
-}
-
-.featured-games .item img {
-  border-radius: 23px;
-}
-
-.featured-games .item h4 {
-  font-size: 15px;
-  margin-top: 20px;
+.featured-explore .item .hover-effect .content span.author {
+  display: flex;
   margin-bottom: 0px;
-  display: inline-block;
 }
 
-.featured-games .item span {
-  color: #666;
-  display: block;
-  margin-top: 7px;
+.featured-explore .item .hover-effect .content span.author img {
+  margin-right: 15px;
+}
+
+.featured-explore .item .hover-effect .content span.author h6 {
+  font-size: 15px;
   font-weight: 400;
+  line-height: 25px;
+  text-align: left;
 }
 
-.featured-games .item ul {
-  float: right;
-  margin-top: 20px;
+.featured-explore .item .hover-effect .content span.author a {
+  color: #7453fc;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
-.featured-games .item ul li {
-  text-align: right;
-  color: #fff;
-  font-size: 14px;
-}
-
-.featured-games .item ul li:first-child i {
-  color: yellow;
-}
-
-.featured-games .item ul li:last-child i {
-  color: #ec6090;
-}
-
-.featured-games .owl-nav {
+.featured-explore .owl-nav {
   position: absolute;
+  width: 100%;
   margin: 0 auto;
-  top: -70px;
-  right: 0;
+  top: 50%;
+  transform: translateY(-23px);
+  text-align: center;
 }
 
-.featured-games .owl-nav .owl-prev {
-  margin-right: 2.5px;
+.featured-explore .owl-nav .owl-prev {
+  position: absolute;
+  left: 30px;
 }
 
-.featured-games .owl-nav .owl-next {
-  margin-left: 2.5px;
+.featured-explore .owl-nav .owl-next {
+  position: absolute;
+  right: 30px;
 }
 
-.featured-games .owl-nav .owl-prev span,
-.featured-games .owl-nav .owl-next span  {
-  font-size: 36px;
+.featured-explore .owl-nav .owl-prev span,
+.featured-explore .owl-nav .owl-next span  {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 22px;
+  font-weight: 700;
   display: inline-block;
-  color: #666;
-  opacity: 1;
+  color: #7453fc;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
   transition: all .3s;
 }
 
-.featured-games .owl-nav .owl-prev span:hover,
-.featured-games .owl-nav .owl-next span:hover {
+.featured-explore .owl-nav .owl-prev span:hover,
+.featured-explore .owl-nav .owl-next span:hover {
   opacity: 1;
-  color: #ec6090;
 }
 
-.top-downloaded {
-  border-radius: 23px;
-  background-color: #1f2122;
-  padding: 30px;
-  max-height: 567px;
-  min-height: 567px;
-}
-
-.top-downloaded ul li {
+.discover-items {
+  background-image: url(../images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 400px 0px 120px 0px;
   position: relative;
+}
+
+.discover-items .section-heading {
+  text-align: left;
+}
+
+.discover-items .section-heading .line-dec {
+  margin-left: 0;
+}
+
+.discover-items #search-form {
+  margin-top: 15px;
+}
+
+.discover-items #search-form input,
+.discover-items #search-form select {
+  width: 100%;
+  height: 46px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 23px;
+  background-color: transparent;
+  padding: 0px 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.discover-items #search-form select {
+  cursor: pointer;
+}
+
+.discover-items #search-form select option {
+  background-color: #2a2a2a;
+}
+
+.discover-items #search-form input::placeholder,
+.discover-items #search-form select::placeholder {
+  color: #fff;
+}
+
+.discover-items #search-form button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #7453fc;
+  border: 1px solid #7453fc;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  width: 100%;
   display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.discover-items #search-form button:after {
+  width: 78%;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.discover-items #search-form button:hover {
+  background-color: #fff;
+  color: #7453fc;
+  border: 1px solid #fff;
+}
+
+.discover-items .item span.banner {
+  font-size: 15px;
+  background-color: #7453fc;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 15px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -16px;
+}
+
+.discover-items .item span.author {
+  display: inline-flex;
   width: 100%;
 }
 
-.top-downloaded ul li img {
-  float: left;
-  margin-right: 15px;
+.discover-items .item span.author img {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
-.top-downloaded ul li h4 {
-  font-size: 15px;
-  padding-top: 7px;
+.discover-items .item img {
+  margin-top: -32px;
+  position: relative;
+  z-index: 1;
 }
 
-.top-downloaded ul li h6 {
-  font-size: 15px;
-  color: #666;
-  font-weight: 400;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.top-downloaded ul li span {
-  color: #fff;
-  font-size: 15px;
-  margin-right: 10px;
-}
-
-.top-downloaded ul li .download i {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-23px);
-  width: 46px;
-  height: 46px;
-  text-align: center;
-  line-height: 46px;
-  color: #ec6090;
-  background-color: #27292a;
-  border-radius: 50%;
-}
-
-.top-downloaded ul li {
-  border-bottom: 1px solid #27292a;
-  margin-bottom: 28px;
-  padding-bottom: 28px;
-}
-
-.top-downloaded .text-button  {
-  text-align: center;
-}
-
-.top-downloaded .text-button a {
-  font-weight: 600;
-  color: #ec6090;
-  font-size: 15px;
-}
-
-/* 
----------------------------------------------
-Start Stream Style
---------------------------------------------- 
-*/
-
-.start-stream .heading-section {
-  margin-top: 60px;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.start-stream .item {
-  padding: 30px;
-  border: 1px solid #444;
-  border-radius: 23px;
-}
-
-.start-stream .item h4 {
+.discover-items .item h4 {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.start-stream .main-button {
-  text-align: center;
   margin-top: 30px;
 }
 
-/* 
----------------------------------------------
-Live Stream Style
---------------------------------------------- 
-*/
-
-.live-stream {
-  margin-top: 60px;
-  border-radius: 23px;
-  background-color: #1f2122;
-  padding: 30px;
-}
-
-.live-stream .item {
-  margin-bottom: 30px;
-}
-
-.live-stream .thumb {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.live-stream .thumb img {
-  border-radius: 23px; 
-}
-
-.live-stream .thumb:hover .hover-effect {
-  opacity: 1;
-  visibility: visible;
-}
-
-.live-stream .hover-effect {
-  opacity: 0;
-  visibility: hidden;
-  transition: all .4s;
-}
-
-.live-stream .hover-effect .live a { 
-  position: absolute;
-  background-color: rgba(236, 96, 144, 0.9);
-  padding: 5px 10px;
-  border-radius: 23px;
-  color: #fff;
-  font-size: 14px;
-  right: 15px;
-  top: 15px;
-}
-
-.live-stream .hover-effect ul {
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
+.discover-items .item .line-dec {
   width: 100%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 30px 0px;
 }
 
-.live-stream .hover-effect ul li {
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-.live-stream .hover-effect ul li a {
-  background-color: rgba(236, 96, 144, 0.9);
-  padding: 5px 10px;
-  border-radius: 23px;
-  color: #fff;
-  font-size: 14px;
-}
-
-.live-stream .avatar img {
-  margin-right: 15px;
-}
-
-.live-stream span i {
-  color: #fff;
-  background-color: #ec6090;
-  border-radius: 50%;
-  font-size: 12px;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  margin-right: 3px;
-}
-
-.live-stream span {
-  font-size: 14px;
-  color: #ec6090;
-}
-
-.live-stream .down-content h4 {
-  margin-top: 8px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-left: 61px;
-}
-
-.live-stream .main-button {
-  text-align: center;
-  margin-bottom: -53px;
-}
-
-/* 
----------------------------------------------
-Featured Banner Style
---------------------------------------------- 
-*/
-
-.feature-banner .thumb {
+.discover-items .item {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  padding: 30px;
+  border-radius: 20px;
   position: relative;
-  max-height: 305px;
-  overflow: hidden;
-  border-radius: 23px;;
+  margin-bottom: 52px;
 }
 
-.feature-banner .thumb a {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-23px, -23px);
-  width: 46px;
-  height: 46px;
-  background-color: #fff;
-  border-radius: 50%;
+.discover-items .item span {
+  color: #fff;
   display: inline-block;
-  text-align: center;
-  line-height: 46px;
-  color: #ec6090;
-}
-
-/* 
----------------------------------------------
-Game Details Style
---------------------------------------------- 
-*/
-
-.game-details h2 {
-  font-size: 45px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 60px 0px;
-}
-
-.game-details .content {
-  border-radius: 23px;
-  padding: 30px;
-  background-color: #1f2122;
-}
-
-.game-details .content .left-info {
-  background-color: #27292a;
-  border-radius: 23px;
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-.game-details .content .left-info .left {
-  float: left;
-}
-
-.game-details .content .left-info h4 {
   font-size: 15px;
-  display: block;
 }
 
-.game-details .content .left-info span {
-  color: #666;
-  display: block;
-  margin-top: 7px;
-  font-weight: 400;
+.discover-items .item span strong {
+  font-size: 20px;
 }
 
-.game-details .content .left-info ul {
+.discover-items .item span.category {
   text-align: right;
 }
 
-.game-details .content .left-info ul li {
-  color: #fff;
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
-.game-details .content .left-info ul li:first-child i {
-  color: yellow;
-}
-
-.game-details .content .left-info ul li:last-child i {
-  color: #ec6090;
-}
-
-.game-details .content .right-info {
-  background-color: #27292a;
-  border-radius: 23px;
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-.game-details .content .right-info ul li {
-  display: inline-block;
-  width: 23%;
+.discover-items .item .main-button {
+  margin-top: 20px;
+  margin-bottom: -60px;
   text-align: center;
-  font-size: 14px;
-  color: #fff;
 }
 
-.game-details .content .right-info ul li i {
-  display: block;
-  margin-bottom: 12px;
-}
-
-.game-details .content .right-info ul li:first-child i {
-  color: yellow;
-} 
-
-.game-details .content .right-info ul li i {
-  color: #ec6090;
-}
-
-.game-details .main-border-button {
-  margin-top: 35px;
-}
-
-.game-details .main-border-button a {
-  text-align: center;
-  width: 100%;
-} 
-
-/* 
----------------------------------------------
-Other Related Style
---------------------------------------------- 
-*/
-
-.other-games {
-  border-radius: 23px;
-  padding: 30px 30px 0px 30px;
-  background-color: #1f2122;
-  margin-top: 60px;
-}
-
-.other-games .item {
+.top-seller {
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0px 90px 0px;
   position: relative;
-  border-bottom: 1px solid #27292a;
-  padding-bottom: 52px;
+}
+
+.top-seller .section-heading .line-dec {
+  background-color: #fff;
+}
+
+.top-seller .item {
+  display: flex;
   margin-bottom: 30px;
 }
 
-.other-games .item img {
-  float: left;
+.top-seller .item img {
   margin-right: 15px;
 }
 
-.other-games .item h4 {
-  display: inline-block;
-  font-size: 15px;
-  margin-bottom: 5px;
-  padding-top: 15px;
-}
-
-.other-games .item span {
-  color: #666;
-  font-size: 14px;
-  display: block;
-}
-
-.other-games ul {
-  position: absolute;
-  right: 0;
-  top: 15px;
-}
-
-.other-games ul li {
-  color: #fff;
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
-.other-games ul li:first-child i {
-  color: yellow;
-}
-
-.other-games ul li:last-child i {
-  color: #ec6090;
-}
-
-/* 
----------------------------------------------
-Top Streamers Style
---------------------------------------------- 
-*/
-
-.top-streamers {
-  border-radius: 23px;
-  background-color: #1f2122;
-  padding: 30px;
-  max-height: 567px;
-  min-height: 567px;
-}
-
-.top-streamers ul li {
-  display: inline-block;
-  width: 100%;
-  border-bottom: 1px solid #353637;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-}
-
-.top-streamers ul li:last-child {
-  border-bottom: none;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.top-streamers ul li span {
-  float: left;
-  font-size: 15px;
-  color: #fff;
-  font-weight: 700;
-  padding-top: 12px;
+.top-seller .item h4 {
+  font-size: 20px;
+  margin-top: 12px;
   margin-right: 10px;
 }
 
-.top-streamers ul li h6 {
-  display: inline;
+.top-seller .item h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+}
+
+.top-seller .item a {
   font-size: 14px;
-  color: #ec6090;
-  font-weight: 400;
-}
-
-.top-streamers ul li h6 i {
+  cursor: auto;
   color: #fff;
-  background-color: #ec6090;
-  border-radius: 50%;
-  font-size: 12px;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  margin-right: 3px;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
-.top-streamers ul li .main-button {
-  float: right;
-}
-
-.top-streamers ul li .main-button a {
-  padding: 8px 20px;
-}
 
 /* 
 ---------------------------------------------
-Profile Style
+Details Page Style
 --------------------------------------------- 
 */
 
-.main-profile {
-  border-radius: 23px;
-  padding: 30px;
-  background-color: #1f2122;
+.item-details-page {
+  background-image: url(../images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+  position: relative;
 }
 
-.main-profile .main-info span {
-  font-size: 14px;
-  color: #fff;
-  background-color: #e75e8d;
-  padding: 8px 20px;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
+.item-details-page:after {
+  background-image: url(/assets/images/category-collection-dec.png);
+  width: 300px;
+  height: 282px;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  content: '';
+  z-index: 1;
 }
 
-.main-profile .main-info h4 {
-  margin-bottom: 20px;
+.item-details-page .left-image {
+  margin-right: 30px;
 }
 
-.main-profile .main-info .main-border-button {
-  margin-top: 25px;
+.item-details-page h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
-.main-profile ul {
-  border-radius: 23px;
-  padding: 30px;
-  background-color: #27292a;
-}
-
-.main-profile ul li {
-  width: 100%;
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #666;
-}
-
-.main-profile ul li span {
-  float: right;
-  font-weight: 500;
-  color: #ec6090;
-}
-
-.main-profile ul li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.clips {
-  margin-top: 30px;
-  border-top: 2px solid #27292a;
-}
-
-.clips .heading-section {
-  margin-top: 30px;
-}
-
-.clips .item  {
-  border-radius: 23px;
-  padding: 30px 15px;
-  background-color: #27292a;
+.item-details-page span.author {
+  display: flex;
   margin-bottom: 30px;
 }
 
-.clips .item .thumb {
-  position: relative;
-  margin-bottom: 15px;
+.item-details-page span.author img {
+  margin-right: 15px;
 }
 
-.clips .item .thumb a {
-  position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-23px, -23px);
-    width: 46px;
-    height: 46px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: 46px;
-    color: #ec6090;
-}
-
-.clips .item h4 {
+.item-details-page span.author h6 {
   font-size: 15px;
-  display: inline-block;
+  font-weight: 400;
+  line-height: 25px;
 }
 
-.clips .item span i {
-  color: #ec6090;
+.item-details-page span.author a {
+  color: #7453fc;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
-.clips .item span {
-  float: right;
+.item-details-page p {
+  margin-bottom: 30px;
+}
+
+.item-details-page span {
   color: #fff;
-  font-size: 14px;
+  display: inline-block;
+  font-size: 15px;
 }
 
-.clips .main-button {
+.item-details-page span strong {
+  font-size: 20px;
+  color: #7453fc;
+}
+
+.item-details-page p {
+  position: relative;
+  z-index: 2;
+}
+
+.item-details-page span.bid,
+.item-details-page span.owner,
+.item-details-page span.ends  {
+  line-height: 35px;
+  position: relative;
+  z-index: 2;
+}
+
+.item-details-page span.bid em,
+.item-details-page span.ends em,
+.item-details-page span.owner em {
+  font-style: normal;
+  color: #afafaf;
+}
+
+.item-details-page form {
+  margin-top: 40px;
+}
+
+
+.item-details-page form label {
+  color: #afafaf;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.item-details-page form input {
+  width: 100px;
+  height: 46px;
+  border: 1px solid #7453fc;
+  outline: none;
+  border-radius: 23px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.item-details-page form input::placeholder {
+  color: #fff;
+}
+
+.item-details-page button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #7453fc;
+  border: 1px solid #7453fc;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-details-page button:after {
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.item-details-page button:hover {
+  background-color: #fff;
+  color: #7453fc;
+  border: 1px solid #fff;
+}
+
+.current-bid {
+  margin-top: 120px;
+}
+
+.current-bid select {
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.current-bid .mini-heading h4 {
+  background-color: #7453fc;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 22px;
+}
+
+.current-bid .item {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #282b2f;
+  border: 1px solid #404245;
+}
+
+.current-bid .item .left-img {
+  flex-basis: 80%;
+  display: inline-flex;
+}
+
+.current-bid .item .right-content {
+  padding: 30px;
+  width: 100%;
+}
+
+.current-bid .item .right-content h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.current-bid .item .right-content a {
+  font-size: 15px;
+  color: #7453fc;
+  font-weight: 700;
+}
+
+.current-bid .item .right-content .line-dec {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 25px 0px;
+}
+
+.current-bid .item .right-content h6 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.current-bid .item .right-content h6 em {
+  font-size: 18px;
+  color: #7453fc;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.current-bid .item .right-content span.date {
+  font-size: 15px;
+  color: #7453fc;
+}
+
+
+/* 
+---------------------------------------------
+Author Page Style
+--------------------------------------------- 
+*/
+
+.author-page {
+  background-image: url(../images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+  position: relative;
+}
+
+.author-page .author {
+  display: flex;
+}
+
+.author-page .author h4 {
+  margin-top: 60px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.author-page .author h4 a {
+  font-size: 15px;
+  color: #7453fc;
+}
+
+.author-page .right-info {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+.author-page .right-info .info-item {
+  margin-bottom: 20px;
+}
+
+.author-page .right-info i {
+  color: #7453fc;
+  font-size: 22px;
+}
+
+.author-page .right-info h6 {
+  font-size: 20px;
+  color: #7453fc;
+  margin-top: 4px;
+}
+
+.author-page .right-info h6 em {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+
+.author-page .right-info h5 {
+  font-size: 20px;
+  color: #afafaf;
   margin-top: 10px;
+}
+
+.author-page .right-info .main-button a {
+  width: 100%;
   text-align: center;
 }
+
+.author-page .section-heading {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.author-page .section-heading .line-dec {
+  margin-left: 0;
+}
+
+.author-page .item span.author {
+  display: inline-flex;
+  width: 100%;
+}
+
+.author-page .item span.author img {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.author-page .item img {
+  margin-top: -32px;
+  position: relative;
+  z-index: 1;
+}
+
+.author-page .item h4 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.author-page .item .line-dec {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 30px 0px;
+}
+
+.author-page .item {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.author-page .item span {
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.author-page .item span strong {
+  font-size: 20px;
+}
+
+.author-page .item span.category {
+  text-align: right;
+}
+
+.author-page .item .main-button {
+  margin-top: 20px;
+  margin-bottom: -60px;
+  text-align: center;
+}
+
+
+/* 
+---------------------------------------------
+Create Page Style
+--------------------------------------------- 
+*/
+
+#contact {
+  background-color: #37393c;
+  border-radius: 20px;
+  padding: 60px 30px;
+  margin-bottom: 120px;
+}
+
+#contact input {
+  width: 100%;
+  height: 46px;
+  text-align: left;
+  padding: 0px 15px;
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #afafaf;
+}
+
+#contact input::placeholder {
+  color: #afafaf;
+}
+
+#contact label {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+#contact input#file {
+  padding: 8px 0px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+}
+
+#contact button {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
 
 /* 
 ---------------------------------------------
@@ -1616,94 +2091,76 @@ body {
 }
 
 @media (max-width: 767px) {
-  body .page-content {
-    padding: 0px 30px;
-  }
-  .main-banner {
-    text-align: center;
-  }
-  .main-banner h4 {
-    font-size: 35px;
-  }
-  .gaming-library .item ul li,
-  .gaming-library .item ul li:first-child,
-  .gaming-library .item ul li:last-child {
-    width: 100% !important;
-    text-align: center !important;
-  }
-  .gaming-library .item ul li {
-    margin-top: 30px;
-  }
-  .top-downloaded ul li .download i {
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-  .top-downloaded ul li img {
-    margin-right: 10px;
-  }
-  .top-downloaded ul li span {
-    font-size: 14px;
-  }
-  .top-streamers ul li .main-button {
-    float: none;
-    margin-top: 10px;
-  }
-  .top-streamers ul li .main-button a {
-    width: 100%;
-    text-align: center;
-  }
-  .top-streamers,
-  .top-downloaded {
-    max-height: 100%;
-    min-height: 100%;
-  }
-  .most-popular .item .inner-item {
-    margin-bottom: 20px;
+  .top-seller .item {
+    justify-content: center;
   }
 }
 
 @media (max-width: 992px) {
-  .background-header {
-  display: inline-block;
+  .main-banner .owl-banner {
+    margin-top: 80px;
   }
-  .header-area .main-nav #search {
+  .categories .item {
+    margin-bottom: 35px;
+  }
+  .create-nft .section-heading,
+  .currently-market .section-heading {
+    text-align: center;
+  }
+  .currently-market-item {
+    width: 100%;
+  }
+  .create-nft .section-heading .line-dec,
+  .currently-market .section-heading .line-dec {
+    margin: 0 auto;
+  }
+  .create-nft .main-button,
+  .currently-market .filters {
+    text-align: center;
+  }
+  .currently-market .filters {
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+  .create-nft p {
+    margin-right: 0px;
+  }
+  .create-nft .first-item:after,
+  .create-nft .second-item:after,
+  .create-nft .first-item .number,
+  .create-nft .second-item .number {
     display: none;
   }
-  .heading-section h4 {
-    font-size: 20px;
+  .create-nft .item {
+    text-align: center;
+    margin-top: 45px;
   }
-  .gaming-library .item ul li {
-    width: 48% !important;
+  .discover-items #search-form {
+    margin-bottom: 40px;
+    margin-top: -30px;
   }
-  .gaming-library .item ul li:last-child {
-    text-align: left;
+  .discover-items #search-form fieldset {
+    margin-bottom: 30px;
   }
-  .featured-games {
-    margin-bottom: 60px;
+  .top-seller .item h6 {
+    font-size: 16px;
   }
-  .start-stream .item {
-    margin: 15px 0px;
+  .item-details-page .left-image {
+    margin-right: 0px;
+    margin-bottom: 30px;
   }
-  .feature-banner .thumb {
+  .current-bid select {
+    float: none;
+  }
+  .author-page .author {
+    justify-content: center;
+  }
+  .author-page .right-info {
+    margin-left: 0px;
     margin-top: 30px;
-  }
-  .main-profile .main-info {
-    margin: 45px 0px;
   }
 }
 
 @media (max-width: 1200px) {
-  .header-area .main-nav .nav li {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .header-area .main-nav .logo {
-    margin-right: 30px;
-    border-right: none;
-  }
-  .gaming-library .item ul li {
-    width: 16%;
-  }
+  
 }
